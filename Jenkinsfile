@@ -51,7 +51,7 @@ pipeline {
 
           }
           environment {
-            SONAR_TOKEN = '871038e3ea5c38741b9900ec838d7ed6d719178b'
+            SONAR_TOKEN = '74f6977fc75d3ead8b6e08da7889bde712bfbf57'
           }
           steps {
             sh '''mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
