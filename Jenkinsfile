@@ -44,6 +44,12 @@ pipeline {
         }
 
         stage('Sonarqube') {
+          agent {
+            docker {
+              image 'maven:3.6.3-jdk-11-slim'
+            }
+
+          }
           environment {
             SONAR_TOKEN = '871038e3ea5c38741b9900ec838d7ed6d719178b'
           }
